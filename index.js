@@ -13,7 +13,7 @@ const handle = app.getRequestHandler();
 
 const MONGO_URL =
   "mongodb+srv://ricardo-forms:20181996@cluster0-zhsl6.azure.mongodb.net/jiro-freelancer?retryWrites=true";
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 co(function*() {
   yield app.prepare();
