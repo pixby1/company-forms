@@ -15,7 +15,7 @@ export default class extends React.Component {
     }
 
     const { list } = await superagent
-      .get("http://localhost:3000/api")
+      .get("https://test-form-ricardo.herokuapp.com/api")
       .then(res => res.body);
     return { list };
   }
@@ -48,7 +48,7 @@ export default class extends React.Component {
   remove(_id) {
     return ev => {
       superagent
-        .del(`http://localhost:3000/api/${_id}`)
+        .del(`https://test-form-ricardo.herokuapp.com/api/${_id}`)
         .then(() => {
           const state = this.state || {};
           const list = this.state.list || this.props.list || [];
@@ -74,7 +74,7 @@ export default class extends React.Component {
       );
 
       superagent
-        .post("http://localhost:3000/api", formData)
+        .post("https://test-form-ricardo.herokuapp.com/api", formData)
         .then(res => {
           const state = this.state || {};
           const list = this.state.list || this.props.list || [];
