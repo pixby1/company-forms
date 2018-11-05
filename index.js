@@ -12,7 +12,7 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 
 const MONGO_URL =
-  "mongodb+srv://ricardo-forms:20181996@cluster0-zhsl6.azure.mongodb.net/jiro-freelancer?retryWrites=true";
+  "mongodb+srv://admin:20081991@cluster0-06hco.mongodb.net/company-forms?retryWrites=true";
 const PORT = process.env.PORT || 3000;
 
 co(function*() {
