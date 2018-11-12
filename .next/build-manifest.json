@@ -1,25 +1,39 @@
 {
   "devFiles": [],
   "pages": {
-    "/index": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.feebfc3782b165901da2.js",
-      "static/runtime/main-529c2ccce82b42d48d1d.js"
-    ],
     "/_app": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.feebfc3782b165901da2.js",
-      "static/runtime/main-529c2ccce82b42d48d1d.js"
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/chunks/commons.dab319f78d1ee9d17b62.js",
+      "static/css/styles.f4040c3f.chunk.css",
+      "static/chunks/styles.80f2d280fae78b9b34f9.js",
+      "static/runtime/main-bfbf2ad7ae2f4289c5c5.js"
+    ],
+    "/_index": [
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/chunks/commons.dab319f78d1ee9d17b62.js",
+      "static/runtime/main-bfbf2ad7ae2f4289c5c5.js"
+    ],
+    "/add-company": [
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/chunks/commons.dab319f78d1ee9d17b62.js",
+      "static/css/styles.f4040c3f.chunk.css",
+      "static/chunks/styles.80f2d280fae78b9b34f9.js",
+      "static/runtime/main-bfbf2ad7ae2f4289c5c5.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/chunks/commons.dab319f78d1ee9d17b62.js",
+      "static/runtime/main-bfbf2ad7ae2f4289c5c5.js"
     ],
     "/_error": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.feebfc3782b165901da2.js",
-      "static/runtime/main-529c2ccce82b42d48d1d.js"
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/chunks/commons.dab319f78d1ee9d17b62.js",
+      "static/runtime/main-bfbf2ad7ae2f4289c5c5.js"
     ],
     "/": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.feebfc3782b165901da2.js",
-      "static/runtime/main-529c2ccce82b42d48d1d.js"
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/chunks/commons.dab319f78d1ee9d17b62.js",
+      "static/runtime/main-bfbf2ad7ae2f4289c5c5.js"
     ]
   }
 }

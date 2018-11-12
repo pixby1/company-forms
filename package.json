@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
+    "dev": "nodemon .",
     "build": "next build",
     "start": "node ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "archetype-js": "^0.6.1",
     "body-parser": "^1.18.3",
     "co": "^4.6.0",
@@ -20,6 +21,7 @@
     "next": "^7.0.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
+    "semantic-ui-react": "^0.83.0",
     "superagent": "^4.0.0-beta.5"
   }
 }

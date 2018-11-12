@@ -2,20 +2,30 @@
   "modules": {
     "byIdentifier": {
       "external \"react\"": 0,
-      "external \"superagent\"": 1,
-      "external \"@babel/runtime/regenerator\"": 2,
-      "external \"styled-jsx/style\"": 3,
-      "multi ./pages/index.js": 4,
-      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/index.js": 5,
-      "multi node_modules/next/dist/pages/_app.js": 6,
-      "node_modules/next/dist/pages/_app.js": 7,
-      "external \"next/app\"": 8,
-      "multi node_modules/next/dist/pages/_error.js": 9,
-      "node_modules/next/dist/pages/_error.js": 10,
-      "external \"next/error\"": 11,
-      "multi node_modules/next/dist/pages/_document.js": 12,
-      "node_modules/next/dist/pages/_document.js": 13,
-      "external \"next/document\"": 14
+      "external \"semantic-ui-react\"": 1,
+      "external \"superagent\"": 2,
+      "external \"@babel/runtime/regenerator\"": 3,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!assets/common-components/componentHead.js": 4,
+      "external \"next/head\"": 5,
+      "external \"next/app\"": 6,
+      "external \"styled-jsx/style\"": 7,
+      "external \"next/link\"": 8,
+      "multi ./pages/_app.js": 9,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/_app.js": 10,
+      "node_modules/ignore-loader/index.js!assets/styles/main.css": 11,
+      "multi ./pages/_index.js": 12,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/_index.js": 13,
+      "multi ./pages/add-company.js": 14,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/add-company.js": 15,
+      "node_modules/ignore-loader/index.js!assets/styles/addCompany.css": 16,
+      "multi ./pages/index.js": 17,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/index.js": 18,
+      "multi node_modules/next/dist/pages/_error.js": 19,
+      "node_modules/next/dist/pages/_error.js": 20,
+      "external \"next/error\"": 21,
+      "multi node_modules/next/dist/pages/_document.js": 22,
+      "node_modules/next/dist/pages/_document.js": 23,
+      "external \"next/document\"": 24
     },
     "usedIds": {
       "0": 0,
@@ -32,22 +42,36 @@
       "11": 11,
       "12": 12,
       "13": 13,
-      "14": 14
+      "14": 14,
+      "15": 15,
+      "16": 16,
+      "17": 17,
+      "18": 18,
+      "19": 19,
+      "20": 20,
+      "21": 21,
+      "22": 22,
+      "23": 23,
+      "24": 24
     }
   },
   "chunks": {
     "byName": {
-      "static/6qUOgYlKv9hiJz6ll5THR/pages/index.js": 0,
-      "static/6qUOgYlKv9hiJz6ll5THR/pages/_app.js": 1,
-      "static/6qUOgYlKv9hiJz6ll5THR/pages/_error.js": 2,
-      "static/6qUOgYlKv9hiJz6ll5THR/pages/_document.js": 3
+      "static/V~OIBOYz76CeTj17HnJv~/pages/_app.js": 0,
+      "static/V~OIBOYz76CeTj17HnJv~/pages/_index.js": 1,
+      "static/V~OIBOYz76CeTj17HnJv~/pages/add-company.js": 2,
+      "static/V~OIBOYz76CeTj17HnJv~/pages/index.js": 3,
+      "static/V~OIBOYz76CeTj17HnJv~/pages/_error.js": 4,
+      "static/V~OIBOYz76CeTj17HnJv~/pages/_document.js": 5
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
       2,
-      3
+      3,
+      4,
+      5
     ]
   }
 }

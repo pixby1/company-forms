@@ -1,7 +1,7 @@
 "use strict";
 
 const { MongoClient } = require("mongodb");
-const api = require("./lib/api");
+const indexApi = require("./lib/index-api");
 const body = require("body-parser");
 const co = require("co");
 const express = require("express");
@@ -11,7 +11,7 @@ const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
-const MONGO_URL =
+const MONGO_URL /* "mongodb://localhost:27017/test"; */ =
   "mongodb+srv://admin:20081991@cluster0-06hco.mongodb.net/company-forms?retryWrites=true";
 const PORT = process.env.PORT || 3000;
 
@@ -28,7 +28,7 @@ co(function*() {
     req.db = db.db("jiro-freelancer");
     next();
   });
-  server.use("/api", api(db.db("jiro-freelancer")));
+  server.use("/api", indexApi(db.db("jiro-freelancer")));
 
   server.get("*", (req, res) => {
     return handle(req, res);

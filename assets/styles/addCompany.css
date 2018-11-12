@@ -1,0 +1,21 @@
+.newCompanyPage {
+  width: 100%;
+  padding-top: 20px;
+}
+.newCompanyPage .newCompany {
+  width: 80%;
+  margin: auto;
+}
+
+.newCompanyPage .newCompany .header {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: #1a1a75;
+  font-weight: 600;
+  color: white;
+}
+
+.newCompanyPage .newCompany .fields > * {
+  width: 50%;
+}
