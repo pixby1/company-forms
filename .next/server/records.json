@@ -85,15 +85,15 @@
   },
   "chunks": {
     "byName": {
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/_app.js": 0,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/_index.js": 1,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/add-company.js": 2,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/company-contact/category.js": 3,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/company-contact/company.js": 4,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/company-contact.js": 5,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/index.js": 6,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/_error.js": 7,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/_document.js": 8
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/_app.js": 0,
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/_index.js": 1,
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/add-company.js": 2,
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/company-contact/category.js": 3,
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/company-contact/company.js": 4,
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/company-contact.js": 5,
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/index.js": 6,
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/_error.js": 7,
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/_document.js": 8
     },
     "bySource": {},
     "usedIds": [

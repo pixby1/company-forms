@@ -514,7 +514,7 @@ function (_React$Component) {
         label: "Denominaci\xF3n",
         name: "nombre",
         onChange: this.validateForm()
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Una vez que guarde los cambios podr\xE1 asignar los Rubros a la Empresa"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Una vez que guarde los cambios podr\xE1 asignar los Rubros a la Empresa"), !this.props.isAddingCompany && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], {
         className: "toggleEditCategory",
         toggle: true,
         active: this.state.editingCategory,
@@ -523,7 +523,7 @@ function (_React$Component) {
             editingCategory: !_this2.state.editingCategory
           });
         }
-      }, "Editar Rubros"), this.props.isAddingCompany || (!this.state.editingCategory ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Form"].Group, {
+      }, "Editar Rubros"), !this.state.editingCategory ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Form"].Group, {
         className: "formGroup1"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Form"].Input, {
         error: this.state.formError.direccion,
@@ -663,7 +663,7 @@ function (_React$Component) {
             }));
           }
         }]
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Form"].Field, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Form"].Field, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], {
         onClick: this.validateForm(true),
         color: "green"
       }, "Submit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], {

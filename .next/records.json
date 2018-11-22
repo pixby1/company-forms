@@ -22,6 +22,29 @@
       }
     }
   ],
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!assets/styles/addCompany.css": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/index.js??ref--5-1!assets/styles/addCompany.css": 0,
+          "node_modules/css-loader/lib/css-base.js": 1
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
   "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!assets/styles/companyContact.css": [
     {
       "modules": {
@@ -50,29 +73,6 @@
       "modules": {
         "byIdentifier": {
           "node_modules/css-loader/index.js??ref--5-1!assets/styles/categoryManagement.css": 0,
-          "node_modules/css-loader/lib/css-base.js": 1
-        },
-        "usedIds": {
-          "0": 0,
-          "1": 1
-        }
-      },
-      "chunks": {
-        "byName": {
-          "mini-css-extract-plugin": 0
-        },
-        "bySource": {},
-        "usedIds": [
-          0
-        ]
-      }
-    }
-  ],
-  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!assets/styles/addCompany.css": [
-    {
-      "modules": {
-        "byIdentifier": {
-          "node_modules/css-loader/index.js??ref--5-1!assets/styles/addCompany.css": 0,
           "node_modules/css-loader/lib/css-base.js": 1
         },
         "usedIds": {
@@ -1861,14 +1861,14 @@
       "static/runtime/webpack.js": 1,
       "styles": 2,
       "static/runtime/main.js": 3,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/_app.js": 4,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/_index.js": 5,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/add-company.js": 6,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/company-contact/category.js": 7,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/company-contact/company.js": 8,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/company-contact.js": 9,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/index.js": 10,
-      "static/JvQ32~koAXVXDZBCD_HMo/pages/_error.js": 11
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/_app.js": 4,
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/_index.js": 5,
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/add-company.js": 6,
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/company-contact/category.js": 7,
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/company-contact/company.js": 8,
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/company-contact.js": 9,
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/index.js": 10,
+      "static/qHEL24ROQ48cJaY9Zb42i/pages/_error.js": 11
     },
     "bySource": {},
     "usedIds": [

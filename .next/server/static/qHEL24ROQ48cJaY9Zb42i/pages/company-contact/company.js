@@ -700,7 +700,7 @@ function (_React$Component) {
         label: "Denominaci\xF3n",
         name: "nombre",
         onChange: this.validateForm()
-      }), external_react_default.a.createElement("p", null, "Una vez que guarde los cambios podr\xE1 asignar los Rubros a la Empresa"), external_react_default.a.createElement(external_semantic_ui_react_["Button"], {
+      }), external_react_default.a.createElement("p", null, "Una vez que guarde los cambios podr\xE1 asignar los Rubros a la Empresa"), !this.props.isAddingCompany && external_react_default.a.createElement(external_semantic_ui_react_["Button"], {
         className: "toggleEditCategory",
         toggle: true,
         active: this.state.editingCategory,
@@ -709,7 +709,7 @@ function (_React$Component) {
             editingCategory: !_this2.state.editingCategory
           });
         }
-      }, "Editar Rubros"), this.props.isAddingCompany || (!this.state.editingCategory ? external_react_default.a.createElement("div", null, external_react_default.a.createElement(external_semantic_ui_react_["Form"].Group, {
+      }, "Editar Rubros"), !this.state.editingCategory ? external_react_default.a.createElement("div", null, external_react_default.a.createElement(external_semantic_ui_react_["Form"].Group, {
         className: "formGroup1"
       }, external_react_default.a.createElement(external_semantic_ui_react_["Form"].Input, {
         error: this.state.formError.direccion,
@@ -849,7 +849,7 @@ function (_React$Component) {
             }));
           }
         }]
-      }))), external_react_default.a.createElement(external_semantic_ui_react_["Form"].Field, null, external_react_default.a.createElement(external_semantic_ui_react_["Button"], {
+      })), external_react_default.a.createElement(external_semantic_ui_react_["Form"].Field, null, external_react_default.a.createElement(external_semantic_ui_react_["Button"], {
         onClick: this.validateForm(true),
         color: "green"
       }, "Submit"), external_react_default.a.createElement(external_semantic_ui_react_["Button"], {

@@ -223,7 +223,7 @@
       "publicPath": "static/chunks/commons.9159d93d4d92cf71e743.js"
     }
   ],
-  "../isObject": [
+  "./isObject": [
     {
       "id": 34,
       "name": "./node_modules/lodash/isObject.js",
@@ -263,10 +263,16 @@
       "publicPath": "static/chunks/commons.9159d93d4d92cf71e743.js"
     }
   ],
-  "@babel/runtime/helpers/typeof": [
+  "../helpers/typeof": [
     {
       "id": 39,
       "name": "./node_modules/semantic-ui-react/node_modules/@babel/runtime/helpers/typeof.js",
+      "file": "static/chunks/commons.9159d93d4d92cf71e743.js",
+      "publicPath": "static/chunks/commons.9159d93d4d92cf71e743.js"
+    },
+    {
+      "id": 237,
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/typeof.js",
       "file": "static/chunks/commons.9159d93d4d92cf71e743.js",
       "publicPath": "static/chunks/commons.9159d93d4d92cf71e743.js"
     }
@@ -463,7 +469,7 @@
       "publicPath": "static/chunks/commons.9159d93d4d92cf71e743.js"
     }
   ],
-  "../../assets/common-components/componentHead": [
+  "../assets/common-components/componentHead": [
     {
       "id": 70,
       "name": "./assets/common-components/componentHead.js",
@@ -631,7 +637,7 @@
       "publicPath": "static/chunks/commons.9159d93d4d92cf71e743.js"
     }
   ],
-  "../../modules/es6.string.iterator": [
+  "../modules/es6.string.iterator": [
     {
       "id": 119,
       "name": "./node_modules/core-js/library/modules/es6.string.iterator.js",
@@ -1011,14 +1017,6 @@
     {
       "id": 236,
       "name": "./node_modules/core-js/library/modules/_classof.js",
-      "file": "static/chunks/commons.9159d93d4d92cf71e743.js",
-      "publicPath": "static/chunks/commons.9159d93d4d92cf71e743.js"
-    }
-  ],
-  "../helpers/typeof": [
-    {
-      "id": 237,
-      "name": "./node_modules/@babel/runtime-corejs2/helpers/typeof.js",
       "file": "static/chunks/commons.9159d93d4d92cf71e743.js",
       "publicPath": "static/chunks/commons.9159d93d4d92cf71e743.js"
     }

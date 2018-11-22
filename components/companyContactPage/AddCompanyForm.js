@@ -281,203 +281,200 @@ export default class extends React.Component {
                 Una vez que guarde los cambios podrá asignar los Rubros a la
                 Empresa
               </p>
-              <Button
-                className="toggleEditCategory"
-                toggle={true}
-                active={this.state.editingCategory}
-                onClick={() => {
-                  this.setState({
-                    editingCategory: !this.state.editingCategory
-                  });
-                }}
-              >
-                Editar Rubros
-              </Button>
-              {this.props.isAddingCompany ||
-                (!this.state.editingCategory ? (
-                  <div>
-                    <Form.Group className="formGroup1">
-                      <Form.Input
-                        error={this.state.formError.direccion}
-                        label="Dirección"
-                        name="direccion"
-                        onChange={this.validateForm()}
-                      />
-                      <Form.Field error={this.state.formError.provincia}>
-                        <label>Provincia</label>
-                        <Dropdown
-                          name="provincia"
-                          fluid={true}
-                          labeled={true}
-                          options={testProvinciaOptions}
-                          selection={true}
-                          placeholder="Seleccionar Provincia"
-                          onChange={this.handleDropdownSelection}
-                          value={this.state.formDropdown.provincia}
-                        />
-                      </Form.Field>
-                    </Form.Group>
-                    <Form.Group>
-                      <Form.Field error={this.state.formError.ciudad}>
-                        <label>Ciudad</label>
-                        <Dropdown
-                          name="ciudad"
-                          fluid={true}
-                          labeled={true}
-                          options={testProvinciaOptions}
-                          selection={true}
-                          placeholder="Ciudad"
-                          onChange={this.handleDropdownSelection}
-                          value={this.state.formDropdown.ciudad}
-                        />
-                      </Form.Field>
-                      <Form.Input label="CP" name="cp" />
-                    </Form.Group>
-                    <Form.Group>
-                      <Form.Input
-                        label="Pais"
-                        name="pais"
-                        onChange={this.validateForm()}
-                      />
-                      <Form.Input label="Código" name="codigo" />
-                    </Form.Group>
-                    <Form.Group>
-                      <Form.Input
-                        error={this.state.formError.telefono}
-                        label="Teléfono"
-                        name="telefono"
-                        onChange={this.validateForm()}
-                      />
-                      <Form.Input label="Fax" name="fax" />
-                    </Form.Group>
-                    <Form.Group>
-                      <Form.Input
-                        error={this.state.formError.mail}
-                        label="Mail"
-                        name="mail"
-                        type="email"
-                        onChange={this.validateForm()}
-                      />
-                      <Form.Input
-                        error={this.state.formError.web}
-                        label="Web"
-                        name="web"
-                        onChange={this.validateForm()}
-                      />
-                    </Form.Group>
-                    <Form.Group>
-                      <Form.Input
-                        error={this.state.formError.cuit}
-                        label="CUIT"
-                        name="cuit"
-                        onChange={this.validateForm()}
-                      />
-                    </Form.Group>
-                    <Form.TextArea label="Observaciones" name="descripcion" />
-                  </div>
-                ) : (
-                  <div className="editCategoryForm">
-                    <ReactTable
-                      className="-striped -highlight"
-                      data={companyCategories}
-                      defaultPageSize={100}
-                      style={{ height: "400px" }}
-                      showPageSizeOptions={false}
-                      columns={[
-                        {
-                          Header: "Rubro",
-                          accessor: "nombre",
-                          Cell: row => {
-                            const thisRowData = row.original;
-                            return (
-                              <div>
-                                <div
-                                  className="familyTreeIndicator"
-                                  style={{
-                                    width:
-                                      thisRowData.nivel > 0 ? 30 + "px" : "0",
-                                    height:
-                                      thisRowData.nivel === 0 ? "0" : "15px",
-                                    marginLeft:
-                                      5 + thisRowData.nivel * 30 + "px"
-                                  }}
-                                />
-                                <div>{row.value}</div>
-                              </div>
-                            );
-                          }
-                        },
-                        {
-                          Header: "Actions",
-                          width: 150,
-                          Cell: row => {
-                            const thisRowData = row.original;
-                            return (
-                              <div>
-                                <Button
-                                  icon="delete"
-                                  onClick={() =>
-                                    this.deleteCategory(thisRowData)
-                                  }
-                                  color="red"
-                                />
-                              </div>
-                            );
-                          }
-                        }
-                      ]}
+              {!this.props.isAddingCompany && (
+                <Button
+                  className="toggleEditCategory"
+                  toggle={true}
+                  active={this.state.editingCategory}
+                  onClick={() => {
+                    this.setState({
+                      editingCategory: !this.state.editingCategory
+                    });
+                  }}
+                >
+                  Editar Rubros
+                </Button>
+              )}
+              {!this.state.editingCategory ? (
+                <div>
+                  <Form.Group className="formGroup1">
+                    <Form.Input
+                      error={this.state.formError.direccion}
+                      label="Dirección"
+                      name="direccion"
+                      onChange={this.validateForm()}
                     />
-                    <p>Select Category</p>
-                    <ReactTable
-                      className="-striped -highlight"
-                      data={this.processCategoryData(this.props.categoryList)}
-                      defaultPageSize={100}
-                      style={{ height: "400px" }}
-                      showPageSizeOptions={false}
-                      columns={[
-                        {
-                          Header: "Rubro",
-                          accessor: "nombre",
-                          Cell: row => {
-                            const thisRowData = row.original;
-                            return (
-                              <div>
-                                <div
-                                  className="familyTreeIndicator"
-                                  style={{
-                                    width:
-                                      thisRowData.nivel > 0 ? 30 + "px" : "0",
-                                    height:
-                                      thisRowData.nivel === 0 ? "0" : "15px",
-                                    marginLeft:
-                                      5 + thisRowData.nivel * 30 + "px"
-                                  }}
-                                />
-                                <div>{row.value}</div>
-                              </div>
-                            );
-                          }
-                        },
-                        {
-                          Header: "Actions",
-                          width: 150,
-                          Cell: row => {
-                            const thisRowData = row.original;
-                            return (
-                              <div>
-                                <Button
-                                  icon="add"
-                                  onClick={() => this.addCategory(thisRowData)}
-                                  color="blue"
-                                />
-                              </div>
-                            );
-                          }
-                        }
-                      ]}
+                    <Form.Field error={this.state.formError.provincia}>
+                      <label>Provincia</label>
+                      <Dropdown
+                        name="provincia"
+                        fluid={true}
+                        labeled={true}
+                        options={testProvinciaOptions}
+                        selection={true}
+                        placeholder="Seleccionar Provincia"
+                        onChange={this.handleDropdownSelection}
+                        value={this.state.formDropdown.provincia}
+                      />
+                    </Form.Field>
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Field error={this.state.formError.ciudad}>
+                      <label>Ciudad</label>
+                      <Dropdown
+                        name="ciudad"
+                        fluid={true}
+                        labeled={true}
+                        options={testProvinciaOptions}
+                        selection={true}
+                        placeholder="Ciudad"
+                        onChange={this.handleDropdownSelection}
+                        value={this.state.formDropdown.ciudad}
+                      />
+                    </Form.Field>
+                    <Form.Input label="CP" name="cp" />
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Input
+                      label="Pais"
+                      name="pais"
+                      onChange={this.validateForm()}
                     />
-                  </div>
-                ))}
+                    <Form.Input label="Código" name="codigo" />
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Input
+                      error={this.state.formError.telefono}
+                      label="Teléfono"
+                      name="telefono"
+                      onChange={this.validateForm()}
+                    />
+                    <Form.Input label="Fax" name="fax" />
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Input
+                      error={this.state.formError.mail}
+                      label="Mail"
+                      name="mail"
+                      type="email"
+                      onChange={this.validateForm()}
+                    />
+                    <Form.Input
+                      error={this.state.formError.web}
+                      label="Web"
+                      name="web"
+                      onChange={this.validateForm()}
+                    />
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Input
+                      error={this.state.formError.cuit}
+                      label="CUIT"
+                      name="cuit"
+                      onChange={this.validateForm()}
+                    />
+                  </Form.Group>
+                  <Form.TextArea label="Observaciones" name="descripcion" />
+                </div>
+              ) : (
+                <div className="editCategoryForm">
+                  <ReactTable
+                    className="-striped -highlight"
+                    data={companyCategories}
+                    defaultPageSize={100}
+                    style={{ height: "400px" }}
+                    showPageSizeOptions={false}
+                    columns={[
+                      {
+                        Header: "Rubro",
+                        accessor: "nombre",
+                        Cell: row => {
+                          const thisRowData = row.original;
+                          return (
+                            <div>
+                              <div
+                                className="familyTreeIndicator"
+                                style={{
+                                  width:
+                                    thisRowData.nivel > 0 ? 30 + "px" : "0",
+                                  height:
+                                    thisRowData.nivel === 0 ? "0" : "15px",
+                                  marginLeft: 5 + thisRowData.nivel * 30 + "px"
+                                }}
+                              />
+                              <div>{row.value}</div>
+                            </div>
+                          );
+                        }
+                      },
+                      {
+                        Header: "Actions",
+                        width: 150,
+                        Cell: row => {
+                          const thisRowData = row.original;
+                          return (
+                            <div>
+                              <Button
+                                icon="delete"
+                                onClick={() => this.deleteCategory(thisRowData)}
+                                color="red"
+                              />
+                            </div>
+                          );
+                        }
+                      }
+                    ]}
+                  />
+                  <p>Select Category</p>
+                  <ReactTable
+                    className="-striped -highlight"
+                    data={this.processCategoryData(this.props.categoryList)}
+                    defaultPageSize={100}
+                    style={{ height: "400px" }}
+                    showPageSizeOptions={false}
+                    columns={[
+                      {
+                        Header: "Rubro",
+                        accessor: "nombre",
+                        Cell: row => {
+                          const thisRowData = row.original;
+                          return (
+                            <div>
+                              <div
+                                className="familyTreeIndicator"
+                                style={{
+                                  width:
+                                    thisRowData.nivel > 0 ? 30 + "px" : "0",
+                                  height:
+                                    thisRowData.nivel === 0 ? "0" : "15px",
+                                  marginLeft: 5 + thisRowData.nivel * 30 + "px"
+                                }}
+                              />
+                              <div>{row.value}</div>
+                            </div>
+                          );
+                        }
+                      },
+                      {
+                        Header: "Actions",
+                        width: 150,
+                        Cell: row => {
+                          const thisRowData = row.original;
+                          return (
+                            <div>
+                              <Button
+                                icon="add"
+                                onClick={() => this.addCategory(thisRowData)}
+                                color="blue"
+                              />
+                            </div>
+                          );
+                        }
+                      }
+                    ]}
+                  />
+                </div>
+              )}
               <Form.Field>
                 <Button onClick={this.validateForm(true)} color="green">
                   Submit
