@@ -1,0 +1,12 @@
+.topMenuBar {
+  height: 27px;
+  background: url("/static/topMenuBackground.gif");
+  text-align: center;
+  line-height: 27px;
+}
+
+.topMenuBar a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}

@@ -25,10 +25,10 @@ co(function*() {
 
   server.use(body.json());
   server.use((req, res, next) => {
-    req.db = db.db("jiro-freelancer");
+    req.db = db.db("company-forms");
     next();
   });
-  server.use("/api", indexApi(db.db("jiro-freelancer")));
+  server.use("/api", indexApi(db.db("company-forms")));
 
   server.get("*", (req, res) => {
     return handle(req, res);

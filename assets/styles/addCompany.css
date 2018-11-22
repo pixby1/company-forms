@@ -19,3 +19,46 @@
 .newCompanyPage .newCompany .fields > * {
   width: 50%;
 }
+
+.newCompanyPage form p {
+  color: black;
+}
+
+.newCompanyPage form .toggleEditCategory {
+  margin-bottom: 10px;
+}
+
+.companyContactPage
+  .categoryManagement
+  .ReactTable
+  .rt-td
+  div.familyTreeIndicator,
+.companyContactPage
+  .categoryManagement
+  .ReactTable
+  .rt-td
+  div.familyTreeIndicator
+  ~ div {
+  display: inline-block;
+}
+
+.companyContactPage .categoryManagement .ReactTable {
+}
+
+.ReactTable .rt-td {
+  color: black;
+}
+
+.ReactTable .rt-td div.familyTreeIndicator,
+.ReactTable .rt-td div.familyTreeIndicator ~ div {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.ReactTable .rt-td div.familyTreeIndicator {
+  margin-left: 5px;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+  position: relative;
+  top: -5px;
+}

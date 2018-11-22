@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
 
-export default ({ title }) => (
+export default props => (
   <Head>
-    <title>{title}</title>
+    <title>{props.children}</title>
     <link rel="stylesheet" type="text/css" href="/static/semantic.min.css" />
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"

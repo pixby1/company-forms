@@ -1,0 +1,68 @@
+.companyContactPage .categoryManagement {
+}
+
+.companyContactPage .categoryManagement .pageHeader {
+  height: 40px;
+  border-bottom: 1px solid #8080805e;
+  position: relative;
+  display: flex;
+}
+
+.companyContactPage .categoryManagement .pageHeader .pageTitle {
+  height: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  font-size: 15pt;
+  color: #665579;
+  padding-left: 20px;
+}
+
+.companyContactPage .categoryManagement .pageHeader button {
+  position: absolute;
+  top: 3.3px;
+  right: 10px;
+}
+
+.companyContactPage
+  .categoryManagement
+  .ReactTable
+  .rt-td
+  div.familyTreeIndicator,
+.companyContactPage
+  .categoryManagement
+  .ReactTable
+  .rt-td
+  div.familyTreeIndicator
+  ~ div {
+  display: inline-block;
+}
+
+.companyContactPage .categoryManagement .ReactTable {
+}
+
+.companyContactPage
+  .categoryManagement
+  .ReactTable
+  .rt-td
+  div.familyTreeIndicator {
+  margin-left: 5px;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+  position: relative;
+  top: -5px;
+}
+
+.addCategoryFormContainer {
+  width: 400px !important;
+  margin: auto !important;
+}
+
+.addCategoryFormContainer .header {
+  height: 40px;
+  color: white;
+  background: #33468c;
+  font-size: 15pt;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: center;
+}

@@ -106,6 +106,9 @@ export default class extends React.Component {
       .set("accept", "json")
       .end((err, res) => {
         console.log(err, res);
+        if (!err) {
+          window.location.reload();
+        }
       });
   };
 

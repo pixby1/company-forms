@@ -1,0 +1,12 @@
+.companyContactPage .pageSidebar {
+  width: 200px;
+  height: 100vh;
+  padding-top: 27px;
+  margin-top: -27px;
+  float: left;
+  margin-right: 10px;
+}
+
+.companyContactPage .pageSidebar .sidebarMenu {
+  height: 100%;
+}
